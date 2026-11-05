@@ -346,7 +346,7 @@ body{overflow-x:clip}
   .globe-img {
     --globe-x: -40px;           /* desktop: push left */
     max-width: 780px;           /* desktop size */
-    transform: translateX(-6%) scale(1.35);
+    transform: translateX(-46%) scale(1.35);
   }
 }
 @media (max-width:360px){
