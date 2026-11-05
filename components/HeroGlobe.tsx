@@ -54,6 +54,7 @@ export default function HeroGlobe() {
           onError={() => setGlobeBroken(true)}
         />
       ) : (
+        <div className="globe-crop">
         <img
           ref={globepRef}
           className="globe-img globe-move"
@@ -61,6 +62,7 @@ export default function HeroGlobe() {
           alt="Illustration of the world connected by a network"
           onError={() => setGlobeBroken(true)}
           />
+          </div>
       )}
       <div className="hero-tags">Stronger democracies<br />Fairer societies<br />A sustainable planet</div>
     </div>
