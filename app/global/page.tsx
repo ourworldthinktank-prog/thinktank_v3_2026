@@ -42,6 +42,7 @@ export default function GlobalPage() {
     <Shell>
       <PageBanner
         variant="global"
+        title="Global"
       />
       <div className="marquee" aria-hidden="true">
         <div className="marquee-track">

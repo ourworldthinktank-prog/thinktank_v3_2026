@@ -7,7 +7,7 @@ export interface LegalSection { h: string; p?: string[]; ul?: string[] }
 export default function LegalPage({ title, eyebrow, sections }: { title: string; eyebrow: string; sections: LegalSection[] }) {
   return (
     <Shell>
-      <PageBanner variant="legal" />
+      <PageBanner variant="legal" title={title} />
       <section className="sec" style={{ paddingTop: 40 }}>
         <div className="wrap legal-wrap">
           <div className="draft-note" role="note">

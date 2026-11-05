@@ -14,9 +14,7 @@ export default async function EventsPage() {
 
   return (
     <Shell>
-      <PageBanner
-        variant="events"
-      />
+      <PageBanner variant="events" title="Events" />
 
       <section className="sec">
         <div className="wrap">

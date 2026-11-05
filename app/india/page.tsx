@@ -20,10 +20,7 @@ const steps = [
 export default function IndiaPage() {
   return (
     <Shell>
-      <PageBanner
-        variant="india"
-       />
-
+      <PageBanner variant="india" title="India Initiative" />
       <section className="sec">
         <div className="wrap">
           <div className="sec-head rv">

@@ -23,9 +23,7 @@ export default async function CouncilPage() {
 
   return (
     <Shell>
-      <PageBanner
-        variant="council"
-      />
+      <PageBanner variant="council" title="Council" />
 
       <div className="council-body">
       <div className="subnav-bar">

@@ -50,7 +50,17 @@ header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdr
 .logo-fb{align-items:center;gap:12px}
 .logo-img{height:50px;width:auto;max-width:240px;object-fit:contain}
 .logo-img-foot{background:#fff;padding:8px 12px;border-radius:12px;height:56px}
-.globe-img{width:100%;height:100%;object-fit:contain;animation:float 9s ease-in-out infinite}
+.globe-img {
+  display: block;
+  width: 170%;               /* fill the column, never overflow it */
+  max-width: 920px;          /* your size cap */
+  height: auto;
+  object-fit: contain;
+  margin-inline: auto;       /* centre inside the column */
+  mix-blend-mode: multiply;  /* hides the white box on your light hero */
+  animation: float 9s ease-in-out infinite; margin-right: 300px;
+  transform: translateX(-188px);
+}
 nav ul{display:flex;gap:30px;list-style:none;align-items:center}
 nav a.nl{font-size:.88rem;font-weight:500;color:var(--navy);position:relative;padding:6px 0}
 nav a.nl::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--coral);transition:.25s}
@@ -254,7 +264,7 @@ body{overflow-x:clip}
   .logo-img{height:40px;max-width:170px}
   .logo-mark{width:38px;height:38px}
   .logo-text b{font-size:1.05rem}
-  .hero-grid{gap:10px;padding:34px 0 24px}
+  .hero-grid{gap:10px;padding:24px 0 24px}
   .hero h1{margin:12px 0 18px}
   .hero-lead{font-size:1rem}
   .hero-cta .btn{padding:15px 24px}
@@ -317,7 +327,7 @@ body{overflow-x:clip}
   .logo-text small{display:none}
 }
 @media (max-width:860px) and (orientation:landscape){
-  .hero-grid{grid-template-columns:1fr 1fr}
+  .hero-grid{grid-template-columns:0.9fr 1fr;align-items: center;}
   .globe-box{max-width:280px}
 }
 
