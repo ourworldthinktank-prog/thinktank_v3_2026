@@ -52,6 +52,7 @@ header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdr
 .logo-img-foot{background:#fff;padding:8px 12px;border-radius:12px;height:56px}
 .globe-img {
   display: block;
+    --globe-x: 0px;               /* mobile: no shift, stays centered */
   width: 170%;               /* fill the column, never overflow it */
   max-width: 920px;          /* your size cap */
   height: auto;
@@ -284,6 +285,10 @@ body{overflow-x:clip}
   .nl-form{max-width:none}
   .consent{max-width:none}
   .nl-form input{font-size:16px;min-height:44px}
+  .globe-img {
+    --globe-x: -40px;           /* desktop: push left */
+    max-width: 780px;           /* desktop size */
+  }
 }
 @media (max-width:600px){
   body{font-size:15.5px}
@@ -320,6 +325,10 @@ body{overflow-x:clip}
   .cookie div{display:grid;grid-template-columns:1fr 1fr}
   .cookie .btn{justify-content:center;min-height:46px}
   .link{min-height:44px}
+  .globe-img {
+    --globe-x: -40px;           /* desktop: push left */
+    max-width: 780px;           /* desktop size */
+  }
 }
 @media (max-width:360px){
   .hero h1{font-size:2.15rem}
