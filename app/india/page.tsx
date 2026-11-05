@@ -22,10 +22,7 @@ export default function IndiaPage() {
     <Shell>
       <PageBanner
         variant="india"
-        eyebrow="India Initiative"
-        title={<>Where ideas meet <span style={{ color: "var(--gold)" }}>action</span></>}
-        intro="India-specific work to bring progressives together, share what works and connect policy with practice."
-      />
+       />
 
       <section className="sec">
         <div className="wrap">
