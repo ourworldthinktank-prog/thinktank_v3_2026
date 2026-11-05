@@ -305,7 +305,7 @@ body{overflow-x:clip}
     transform-origin: 50% 35%;   /* zoom from around the globe's centre */
     animation: none;             /* the float animation would override transform */
     mix-blend-mode: multiply;
-    transform: translateX(-6%) scale(1.35);
+    transform: translateX(-50%) scale(1.35);
   }
 }
 @media (max-width:600px){
