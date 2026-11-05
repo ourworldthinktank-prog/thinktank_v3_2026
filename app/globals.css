@@ -265,7 +265,9 @@ body{overflow-x:clip}
   .logo-img{height:40px;max-width:170px}
   .logo-mark{width:38px;height:38px}
   .logo-text b{font-size:1.05rem}
-  .hero-grid{gap:10px;padding:24px 0 24px}
+  .hero-grid{gap:10px;padding:24px 0 24px;
+    overflow-x: clip;           /* nothing can spill past the screen */
+  }
   .hero h1{margin:12px 0 18px}
   .hero-lead{font-size:1rem}
   .hero-cta .btn{padding:15px 24px}
@@ -286,8 +288,13 @@ body{overflow-x:clip}
   .consent{max-width:none}
   .nl-form input{font-size:16px;min-height:44px}
   .globe-img {
-    --globe-x: -40px;           /* desktop: push left */
-    max-width: 780px;           /* desktop size */
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    transform: none !important;
+    animation: float-m 9s ease-in-out infinite;
+    mix-blend-mode: multiply;   /* hides the white box on the light background */
   }
 }
 @media (max-width:600px){
